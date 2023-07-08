@@ -13,6 +13,8 @@ public class PlayerControls : MonoBehaviour
     {
         Debug.Log("player control script");
 
+    
+
     }
 
     // Update is called once per frame
@@ -20,12 +22,11 @@ public class PlayerControls : MonoBehaviour
     {
         screenPosition = Input.mousePosition;
 
-        Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+        //Ray ray = Camera.main.ScreenPointToRay(screenPosition);
+
+
 
     }
 
-    private void OnMouseDown()
-    {
-        Debug.Log("mouse clicked");
-    }
+
 }
