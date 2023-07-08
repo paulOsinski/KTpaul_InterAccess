@@ -1,0 +1,555 @@
+fileFormatVersion: 2
+guid: 277d41272aa584ef88cdc9ee0c80516c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 63
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Grass Dirt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf0afa4903774a6ba365ddf8145d64c
+      internalID: 942678354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 100
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10772d505f6194ec0b17e568b89bfb6f
+      internalID: 1744233475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 100
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83e62004053f4e79982e548ebdd6b44
+      internalID: -1914103351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 100
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedd36f468a7c46c69f2bea07d9d34ba
+      internalID: -1033422458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b463cc5d07994325b6dfd284aea745b
+      internalID: 367966384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 67
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0caa7f42131184ba5b0a89b8e3975500
+      internalID: 1833696854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 67
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ec45994cb2d4cc0b8cef6cb145ac05
+      internalID: 1910737619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 67
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2437952d07c470198363762ffbd998
+      internalID: -1815021715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 34
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04091e724ab064bc6920e12f8314c6c3
+      internalID: -786152670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 34
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747509c557af548ea97a94824d0f8d45
+      internalID: -159842232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 34
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72b9122e0d6c4fe88ded21f6170f5da
+      internalID: 787724561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58a8480234bd4a3e9cd22cf5c11e1c6
+      internalID: -257259657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db472a3825264389baded4ebe3fa6d2
+      internalID: -1293916816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass Dirt_13
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      physicsShape:
+      - - {x: 0, y: -16}
+        - {x: 32, y: 0}
+        - {x: 0, y: 16}
+        - {x: -32, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620e94094441f4c578a9943621b641de
+      internalID: -952344717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Grass Dirt_4: 367966384
+      Grass Dirt_1: 1744233475
+      Grass Dirt_10: 787724561
+      Grass Dirt_8: -786152670
+      Grass Dirt_5: 1833696854
+      Grass Dirt_11: -257259657
+      Grass Dirt_13: -952344717
+      Grass Dirt_7: -1815021715
+      Grass Dirt_3: -1033422458
+      Grass Dirt_6: 1910737619
+      Grass Dirt_9: -159842232
+      Grass Dirt_2: -1914103351
+      Grass Dirt_0: 942678354
+      Grass Dirt_12: -1293916816
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
