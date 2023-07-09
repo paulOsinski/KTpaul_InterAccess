@@ -11,7 +11,7 @@ public class PlayerControls : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("player control script");
+       
 
     
 
@@ -21,12 +21,16 @@ public class PlayerControls : MonoBehaviour
     void Update()
     {
         screenPosition = Input.mousePosition;
+        worldPosition = Camera.main.ScreenToWorldPoint(screenPosition + new Vector3(0, 0, 20f));
 
-        //Ray ray = Camera.main.ScreenPointToRay(screenPosition);
-
-
+        
 
     }
 
+    private void OnMouseDown()
+    {
+        //check if click is on an interactble object in game world
+        //could be person, building, 
+    }
 
 }
