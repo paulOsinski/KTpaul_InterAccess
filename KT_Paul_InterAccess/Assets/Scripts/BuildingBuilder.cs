@@ -7,10 +7,13 @@ public class BuildingBuilder : MonoBehaviour
     public GameObject building;
     public PlayerControls playerControls;
     public GameObject currentBuild;
+    public ResourceManager resourceManager;
 
-    string buildingStatus;
+    public string buildingStatus;
 
-    // Start is called before the first frame update
+    BuildingObject currentBuildData;
+
+
     public void createBuilding()
     {
         Debug.Log("createBuilding Called");
@@ -18,28 +21,54 @@ public class BuildingBuilder : MonoBehaviour
         Vector3 buildingPos = playerControls.worldPosition;
 
         currentBuild = GameObject.Instantiate(building, buildingPos, Quaternion.identity);
+        currentBuildData = currentBuild.GetComponent<BuildingObject>();
         
     }
 
-    // Update is called once per frame
+
+
     void Update()
     {
 
         if (currentBuild != null)
         {
-            Vector3 buildingPos = playerControls.worldPosition; 
+
+            Vector3 buildingPos = playerControls.worldPosition;
 
             currentBuild.transform.position = buildingPos; //move building w. mouse
+
+
+            if (resourceManager.stoneNum < currentBuildData.stoneCost || resourceManager.woodNum < currentBuildData.woodCost || resourceManager.foodNum < currentBuildData.foodCost || resourceManager.goldNum < currentBuildData.goldCost)
+            {
+                Debug.Log("INVALID BUILDING");
+
+                buildingStatus = "invalid";
+                //set material to invalid
+
+            } else
+            {
+                buildingStatus = "valid";
+            }
+    
+
+            // if currentBuild collides w. obstacles set to invalid
+
 
             if (Input.GetMouseButtonDown(0))
             {
                 //if status = valid, status = fixed
                 //place building
+                if (buildingStatus == "valid") {
 
                 buildingStatus = "fixed";
 
-                if (buildingStatus == "fixed")
-                {
+                Debug.Log(buildingStatus);
+                
+                    resourceManager.stoneNum = resourceManager.stoneNum - currentBuildData.stoneCost;
+                    resourceManager.woodNum = resourceManager.woodNum - currentBuildData.woodCost;
+                    resourceManager.foodNum = resourceManager.foodNum - currentBuildData.foodCost;
+                    resourceManager.goldNum = resourceManager.goldNum - currentBuildData.goldCost;
+
                     currentBuild = null;
                     Debug.Log("building fixed ");
                 }
