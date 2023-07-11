@@ -5,6 +5,9 @@ using UnityEngine;
 public class BuildingBuilder : MonoBehaviour
 {
     public GameObject building;
+    public GameObject buildingFarm;
+    public GameObject buildingWoodCamp;
+
     public PlayerControls playerControls;
     public GameObject currentBuild;
     public ResourceManager resourceManager;
@@ -18,6 +21,7 @@ public class BuildingBuilder : MonoBehaviour
     BuildingObject currentBuildData;
     GameObject currentBuildSprite;
 
+    Vector3 buildingPos;
 
 
 
@@ -25,7 +29,7 @@ public class BuildingBuilder : MonoBehaviour
     {
         Debug.Log("createBuilding Called");
 
-        Vector3 buildingPos = playerControls.worldPosition;
+        buildingPos = playerControls.worldPosition;
 
         currentBuild = GameObject.Instantiate(building, buildingPos, Quaternion.identity);
         currentBuildData = currentBuild.GetComponent<BuildingObject>();
@@ -33,8 +37,34 @@ public class BuildingBuilder : MonoBehaviour
 
     }
 
+    public void createBuildingFarm()
+    {
+        Debug.Log("Farm created");
+
+        Vector3 buildingPos = playerControls.worldPosition;
+
+        currentBuild = GameObject.Instantiate(buildingFarm, buildingPos, Quaternion.identity);
+        currentBuildData = currentBuild.GetComponent<BuildingObject>();
+        currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+    }
+
+
+    public void createBuildingWood()
+    {
+        Debug.Log("wood c amp created");
+
+        Vector3 buildingPos = playerControls.worldPosition;
+
+        currentBuild = GameObject.Instantiate(buildingWoodCamp, buildingPos, Quaternion.identity);
+        currentBuildData = currentBuild.GetComponent<BuildingObject>();
+        currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+    }
+
     void Update()
     {
+        buildingPos = playerControls.worldPosition;
 
         if (currentBuild != null)
         {
