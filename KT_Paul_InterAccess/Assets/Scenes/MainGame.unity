@@ -1441,7 +1441,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 870947dba81d14d81adcee4ec3a3e6d7, type: 3}
+  m_Sprite: {fileID: -1313039349, guid: dcff0469988d9454d8288cf53f64b4d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3238,6 +3238,9 @@ MonoBehaviour:
   currentBuild: {fileID: 0}
   resourceManager: {fileID: 857280780}
   buildingStatus: 
+  invalidMaterial: {fileID: 2100000, guid: a94586d3407464b86b1ef6edacb16c5f, type: 2}
+  validMaterial: {fileID: 2100000, guid: 72de12fea064843f3b0c273b617b951f, type: 2}
+  fixedMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!114 &857280780
 MonoBehaviour:
   m_ObjectHideFlags: 0

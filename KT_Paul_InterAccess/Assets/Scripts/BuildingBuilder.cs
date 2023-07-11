@@ -11,7 +11,14 @@ public class BuildingBuilder : MonoBehaviour
 
     public string buildingStatus;
 
+    public Material invalidMaterial;
+    public Material validMaterial;
+    public Material fixedMaterial;
+
     BuildingObject currentBuildData;
+    GameObject currentBuildSprite;
+
+
 
 
     public void createBuilding()
@@ -22,10 +29,9 @@ public class BuildingBuilder : MonoBehaviour
 
         currentBuild = GameObject.Instantiate(building, buildingPos, Quaternion.identity);
         currentBuildData = currentBuild.GetComponent<BuildingObject>();
-        
+        currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
     }
-
-
 
     void Update()
     {
@@ -40,16 +46,20 @@ public class BuildingBuilder : MonoBehaviour
 
             if (resourceManager.stoneNum < currentBuildData.stoneCost || resourceManager.woodNum < currentBuildData.woodCost || resourceManager.foodNum < currentBuildData.foodCost || resourceManager.goldNum < currentBuildData.goldCost)
             {
-                Debug.Log("INVALID BUILDING");
 
                 buildingStatus = "invalid";
-                //set material to invalid
+
+                currentBuildSprite.GetComponent<SpriteRenderer>().material = invalidMaterial;
+
+                Debug.Log("material set too invalid");
 
             } else
             {
                 buildingStatus = "valid";
+                currentBuildSprite.GetComponent<SpriteRenderer>().material = validMaterial;
+
             }
-    
+
 
             // if currentBuild collides w. obstacles set to invalid
 
@@ -70,6 +80,7 @@ public class BuildingBuilder : MonoBehaviour
                     resourceManager.goldNum = resourceManager.goldNum - currentBuildData.goldCost;
 
                     currentBuild = null;
+                    currentBuildSprite.GetComponent<SpriteRenderer>().material = fixedMaterial;
                     Debug.Log("building fixed ");
                 }
             }
