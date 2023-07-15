@@ -51,6 +51,7 @@ MonoBehaviour:
   stoneCost: 0
   goldCost: 0
   foodCost: 0
+  buildingType: farm
 --- !u!156049354 &670419632084987934
 Grid:
   m_ObjectHideFlags: 0

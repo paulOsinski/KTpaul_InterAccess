@@ -7,6 +7,8 @@ public class BuildingBuilder : MonoBehaviour
     public GameObject building;
     public GameObject buildingFarm;
     public GameObject buildingWoodCamp;
+    public GameObject buildingStoneMine;
+    public GameObject buildingGoldMine;
 
     public PlayerControls playerControls;
     public GameObject currentBuild;
@@ -20,6 +22,7 @@ public class BuildingBuilder : MonoBehaviour
 
     BuildingObject currentBuildData;
     GameObject currentBuildSprite;
+    string currentBuildType = "none";
 
     Vector3 buildingPos;
 
@@ -27,40 +30,93 @@ public class BuildingBuilder : MonoBehaviour
 
     public void createBuilding()
     {
-        Debug.Log("createBuilding Called");
+    
 
-        buildingPos = playerControls.worldPosition;
+        if (currentBuildType != "house")
+        {
+            Debug.Log("createBuilding Called");
 
-        currentBuild = GameObject.Instantiate(building, buildingPos, Quaternion.identity);
-        currentBuildData = currentBuild.GetComponent<BuildingObject>();
-        currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+            buildingPos = playerControls.worldPosition;
+
+            currentBuild = GameObject.Instantiate(building, buildingPos, Quaternion.identity);
+            currentBuildData = currentBuild.GetComponent<BuildingObject>();
+            currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+            currentBuildType = currentBuild.GetComponent<BuildingObject>().buildingType;
+        }
 
     }
 
     public void createBuildingFarm()
     {
-        Debug.Log("Farm created");
 
-        Vector3 buildingPos = playerControls.worldPosition;
+        if ( currentBuildType != "farm" || currentBuild == null)
+        {
+            Debug.Log("Farm created");
 
-        currentBuild = GameObject.Instantiate(buildingFarm, buildingPos, Quaternion.identity);
-        currentBuildData = currentBuild.GetComponent<BuildingObject>();
-        currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+            Vector3 buildingPos = playerControls.worldPosition;
 
+            currentBuild = GameObject.Instantiate(buildingFarm, buildingPos, Quaternion.identity);
+            currentBuildData = currentBuild.GetComponent<BuildingObject>();
+            currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+            currentBuildType = currentBuild.GetComponent<BuildingObject>().buildingType;
+        }
     }
 
 
     public void createBuildingWood()
     {
-        Debug.Log("wood c amp created");
 
-        Vector3 buildingPos = playerControls.worldPosition;
+        if (currentBuildType != "wood" || currentBuild == null)
+        {
+            Debug.Log("wood c amp created");
 
-        currentBuild = GameObject.Instantiate(buildingWoodCamp, buildingPos, Quaternion.identity);
-        currentBuildData = currentBuild.GetComponent<BuildingObject>();
-        currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+            Vector3 buildingPos = playerControls.worldPosition;
 
+            currentBuild = GameObject.Instantiate(buildingWoodCamp, buildingPos, Quaternion.identity);
+            currentBuildData = currentBuild.GetComponent<BuildingObject>();
+            currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+            currentBuildType = currentBuild.GetComponent<BuildingObject>().buildingType;
+        }
     }
+
+    public void createBuildingStoneMine()
+    {
+
+        if (currentBuildType != "stone")
+        {
+            Debug.Log("stone mine createcd");
+
+            Vector3 buildingPos = playerControls.worldPosition;
+
+            currentBuild = GameObject.Instantiate(buildingStoneMine, buildingPos, Quaternion.identity);
+            currentBuildData = currentBuild.GetComponent<BuildingObject>();
+            currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+            currentBuildType = currentBuild.GetComponent<BuildingObject>().buildingType;
+
+        }
+    }
+
+    public void createBuildingGoldMine()
+    {
+
+        if (currentBuildType != "gold")
+        {
+            Debug.Log("gold mine built");
+
+            Vector3 buildingPos = playerControls.worldPosition;
+
+            currentBuild = GameObject.Instantiate(buildingStoneMine, buildingPos, Quaternion.identity);
+            currentBuildData = currentBuild.GetComponent<BuildingObject>();
+            currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+            currentBuildType = currentBuild.GetComponent<BuildingObject>().buildingType;
+        }
+    }
+
 
     void Update()
     {
@@ -109,9 +165,34 @@ public class BuildingBuilder : MonoBehaviour
                     resourceManager.foodNum = resourceManager.foodNum - currentBuildData.foodCost;
                     resourceManager.goldNum = resourceManager.goldNum - currentBuildData.goldCost;
 
+                    if (currentBuildType == "farm")
+                    {
+                        resourceManager.farmCheck = true;
+                    }
+                    else if (currentBuildType == "wood")
+                    {
+                        resourceManager.woodCampCheck = true;
+                    }
+                    else if (currentBuildType == "stone")
+                    {
+                        resourceManager.stoneMineCheck = true;
+                    }
+                    else if (currentBuildType == "gold")
+                    {
+                        resourceManager.goldMineCheck = true;
+                    }
+                    else if (currentBuildType == "house")
+                    {
+                        resourceManager.houseCheck = true;
+                    }
+                    else
+
+                        Debug.Log("no build type found");
+
                     currentBuild = null;
                     currentBuildSprite.GetComponent<SpriteRenderer>().material = fixedMaterial;
                     Debug.Log("building fixed ");
+                    currentBuildType = "none";
                 }
             }
         }
