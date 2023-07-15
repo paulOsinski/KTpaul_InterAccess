@@ -190,6 +190,8 @@ public class BuildingBuilder : MonoBehaviour
 
                 buildingStatus = "fixed";
 
+                    currentBuild.tag = "TaskObject";
+
                 Debug.Log(buildingStatus);
                 
                     resourceManager.stoneNum = resourceManager.stoneNum - currentBuildData.stoneCost;
