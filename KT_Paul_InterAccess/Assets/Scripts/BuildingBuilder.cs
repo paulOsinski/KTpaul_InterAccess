@@ -9,6 +9,7 @@ public class BuildingBuilder : MonoBehaviour
     public GameObject buildingWoodCamp;
     public GameObject buildingStoneMine;
     public GameObject buildingGoldMine;
+    public GameObject buildingMilitary;
 
     public PlayerControls playerControls;
     public GameObject currentBuild;
@@ -110,6 +111,23 @@ public class BuildingBuilder : MonoBehaviour
             Vector3 buildingPos = playerControls.worldPosition;
 
             currentBuild = GameObject.Instantiate(buildingStoneMine, buildingPos, Quaternion.identity);
+            currentBuildData = currentBuild.GetComponent<BuildingObject>();
+            currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
+
+            currentBuildType = currentBuild.GetComponent<BuildingObject>().buildingType;
+        }
+    }
+
+    public void createBuildingMilitary()
+    {
+
+        if (currentBuildType != "mil")
+        {
+            Debug.Log("mil build called");
+
+            Vector3 buildingPos = playerControls.worldPosition;
+
+            currentBuild = GameObject.Instantiate(buildingMilitary, buildingPos, Quaternion.identity);
             currentBuildData = currentBuild.GetComponent<BuildingObject>();
             currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
 

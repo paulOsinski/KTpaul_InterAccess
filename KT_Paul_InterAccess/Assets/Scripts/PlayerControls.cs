@@ -21,7 +21,7 @@ public class PlayerControls : MonoBehaviour
     void Update()
     {
         screenPosition = Input.mousePosition;
-        worldPosition = Camera.main.ScreenToWorldPoint(screenPosition + new Vector3(-100, 100, 1f));
+        worldPosition = Camera.main.ScreenToWorldPoint(screenPosition + new Vector3(0, 0, 1f));
 
     }
 

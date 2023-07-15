@@ -52,10 +52,12 @@ public class ResourceManager : MonoBehaviour
 
     void ResourceAdd()
     {
+        foodNum = foodNum - 1;
+
         Debug.Log(Time.time);
         if (farmCheck == true)
         {
-            foodNum = foodNum + 3;
+            foodNum = foodNum + 2;
         }
         if (woodCampCheck)
         {
