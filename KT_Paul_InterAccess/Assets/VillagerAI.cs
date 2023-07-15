@@ -11,6 +11,8 @@ public class VillagerAI : MonoBehaviour
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
 
+    public Transform enemyGFX;
+
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
@@ -24,7 +26,15 @@ public class VillagerAI : MonoBehaviour
         seeker = GetComponent<Seeker>();
         rigidBod = GetComponent<Rigidbody2D>();
 
+        InvokeRepeating("UpdatePath", 0f, .5f);
+    }
+
+    void UpdatePath()
+    {
+        if(seeker.IsDone())
+        {
         seeker.StartPath(rigidBod.position, target.position, OnPathComplete);
+        }
     }
 
     void OnPathComplete(Path p)
@@ -65,5 +75,16 @@ public class VillagerAI : MonoBehaviour
             currentWaypoint++;
             return;
         }
+
+        if(rigidBod.velocity.x >= 0.01f)
+            // travelling to the left
+            {
+                enemyGFX.localScale = new Vector3(1f, 1f, 1f);
+            }
+        else if (rigidBod.velocity.x <= -0.01f)
+
+            {
+                enemyGFX.localScale = new Vector3(-1f, 1f, 1f);
+            }
     }
 }

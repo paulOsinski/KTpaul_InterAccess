@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -63,6 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
@@ -75,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -87,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -99,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -111,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -967,43 +973,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      MiniBlacksmith_23: -529579956
-      MiniBlacksmith_34: 559566815
-      MiniBlacksmith_28: 1210009320
+      MiniBlacksmith_1: -131435590
+      MiniBlacksmith_10: -412065720
+      MiniBlacksmith_12: -183587616
+      MiniBlacksmith_13: -1378977118
       MiniBlacksmith_14: -750851786
       MiniBlacksmith_15: -773908876
-      MiniBlacksmith_2: -740706952
-      MiniBlacksmith_32: -348905501
-      MiniBlacksmith_30: 1540458727
-      MiniBlacksmith_1: -131435590
-      MiniBlacksmith_25: -1627580162
-      MiniBlacksmith_22: 2094320881
-      MiniBlacksmith_37: -1804062871
-      MiniBlacksmith_33: -1083726812
-      MiniBlacksmith_13: -1378977118
-      MiniBlacksmith_21: -1600646484
-      MiniBlacksmith_4: 1192900583
-      MiniBlacksmith_20: 1286254282
-      MiniBlacksmith_12: -183587616
-      MiniBlacksmith_26: 1776603660
-      MiniBlacksmith_29: -1634911484
-      MiniBlacksmith_31: 1217062658
-      MiniBlacksmith_8: -360646454
-      MiniBlacksmith_5: 1227371546
-      MiniBlacksmith_17: 1222200499
-      MiniBlacksmith_19: -488306678
-      MiniBlacksmith_3: -541543651
-      MiniBlacksmith_7: 555516843
       MiniBlacksmith_16: 476449621
-      MiniBlacksmith_6: -768466375
+      MiniBlacksmith_17: 1222200499
       MiniBlacksmith_18: 1276350893
-      MiniBlacksmith_10: -412065720
-      MiniBlacksmith_36: 584255769
-      MiniBlacksmith_39: 711067664
+      MiniBlacksmith_19: -488306678
+      MiniBlacksmith_2: -740706952
+      MiniBlacksmith_20: 1286254282
+      MiniBlacksmith_21: -1600646484
+      MiniBlacksmith_22: 2094320881
+      MiniBlacksmith_23: -529579956
+      MiniBlacksmith_25: -1627580162
+      MiniBlacksmith_26: 1776603660
+      MiniBlacksmith_28: 1210009320
+      MiniBlacksmith_29: -1634911484
+      MiniBlacksmith_3: -541543651
+      MiniBlacksmith_30: 1540458727
+      MiniBlacksmith_31: 1217062658
+      MiniBlacksmith_32: -348905501
+      MiniBlacksmith_33: -1083726812
+      MiniBlacksmith_34: 559566815
       MiniBlacksmith_35: 1466402345
-  spritePackingTag: 
+      MiniBlacksmith_36: 584255769
+      MiniBlacksmith_37: -1804062871
+      MiniBlacksmith_39: 711067664
+      MiniBlacksmith_4: 1192900583
+      MiniBlacksmith_5: 1227371546
+      MiniBlacksmith_6: -768466375
+      MiniBlacksmith_7: 555516843
+      MiniBlacksmith_8: -360646454
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
