@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4830821111243946252}
   - component: {fileID: 203944594561331912}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 7221434955234556974}
   - component: {fileID: 1100779200670700713}
   - component: {fileID: 7508673516063382181}
-  - component: {fileID: 3567026035296347835}
-  m_Layer: 0
+  - component: {fileID: 5061335290881928932}
+  m_Layer: 6
   m_Name: BuildingTestObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ PolygonCollider2D:
       - {x: 0.58778536, y: -0.80901694}
       - {x: 0.9510565, y: 0.30901712}
   m_UseDelaunayMesh: 0
---- !u!114 &3567026035296347835
+--- !u!114 &5061335290881928932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,6 +205,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9122854123126275211}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ba13144308d44736b82898bb194eb26, type: 3}
+  m_Script: {fileID: 11500000, guid: ed67c61074332497dacc7b150abf823e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  woodCost: 75
+  stoneCost: 0
+  goldCost: 0
+  foodCost: 0
