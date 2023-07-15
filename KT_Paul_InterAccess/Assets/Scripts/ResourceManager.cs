@@ -29,7 +29,7 @@ public class ResourceManager : MonoBehaviour
     {
         stoneNum = 25;
         foodNum = 150;
-        woodNum = 100;
+        woodNum = 200;
         goldNum = 0;
         idleVill = 0;
 
@@ -55,19 +55,19 @@ public class ResourceManager : MonoBehaviour
         foodNum = foodNum - 1;
 
         Debug.Log(Time.time);
-        if (farmCheck == true)
+        if (farmCheck == true && foodNum < 400)
         {
             foodNum = foodNum + 2;
         }
-        if (woodCampCheck)
+        if (woodCampCheck && woodNum < 300)
         {
             woodNum = woodNum +3;
         }
-        if (goldMineCheck)
+        if (goldMineCheck && goldNum < 100)
         {
             goldNum = goldNum + 1;
         }
-        if (stoneMineCheck)
+        if (stoneMineCheck && stoneNum < 200)
         {
             stoneNum = stoneNum + 2;
         }
