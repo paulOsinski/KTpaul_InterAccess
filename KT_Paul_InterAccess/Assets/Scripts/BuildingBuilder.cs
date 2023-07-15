@@ -117,7 +117,7 @@ public class BuildingBuilder : MonoBehaviour
 
             Vector3 buildingPos = playerControls.worldPosition;
 
-            currentBuild = GameObject.Instantiate(buildingStoneMine, buildingPos, Quaternion.identity);
+            currentBuild = GameObject.Instantiate(buildingGoldMine, buildingPos, Quaternion.identity);
             currentBuildData = currentBuild.GetComponent<BuildingObject>();
             currentBuildSprite = currentBuild.transform.GetChild(0).gameObject;
 
@@ -140,6 +140,13 @@ public class BuildingBuilder : MonoBehaviour
 
             currentBuildType = currentBuild.GetComponent<BuildingObject>().buildingType;
         }
+    }
+
+   public void villagerBuilding()
+    {
+        //villager activates this to build building, change status from fixed to built, add to resources
+
+
     }
 
 
