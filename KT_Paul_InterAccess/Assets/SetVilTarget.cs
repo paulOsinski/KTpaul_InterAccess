@@ -10,15 +10,20 @@ public class SetVilTarget : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        target = GameObject.FindGameObjectWithTag("TaskObject");
-        aIDestinationSetter.target = target.transform;
-        Debug.Log("WOOHOO");
-        
+    {        
     }
 
     // Update is called once per frame
     void Update()
     {        
+        target = GameObject.FindGameObjectWithTag("TaskObject");
+        if (target != null)
+        {aIDestinationSetter.target = target.transform;
+        Debug.Log("new task object found");}
+        else
+        {
+            Debug.Log("no task object found");
+        }
+        
     }
 }
