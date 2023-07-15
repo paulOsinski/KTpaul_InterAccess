@@ -27,6 +27,13 @@ public class BuildingBuilder : MonoBehaviour
 
     Vector3 buildingPos;
 
+    public void currentBuildCheck()
+    {
+        if (currentBuild != null){
+
+            GameObject.Destroy(currentBuild, 1);
+        }
+    }
 
 
     public void createBuilding()
@@ -86,7 +93,7 @@ public class BuildingBuilder : MonoBehaviour
     public void createBuildingStoneMine()
     {
 
-        if (currentBuildType != "stone")
+        if (currentBuildType != "stone" || currentBuild == null)
         {
             Debug.Log("stone mine createcd");
 
@@ -104,7 +111,7 @@ public class BuildingBuilder : MonoBehaviour
     public void createBuildingGoldMine()
     {
 
-        if (currentBuildType != "gold")
+        if (currentBuildType != "gold" || currentBuild == null)
         {
             Debug.Log("gold mine built");
 
@@ -121,7 +128,7 @@ public class BuildingBuilder : MonoBehaviour
     public void createBuildingMilitary()
     {
 
-        if (currentBuildType != "mil")
+        if (currentBuildType != "mil" || currentBuild == null)
         {
             Debug.Log("mil build called");
 
